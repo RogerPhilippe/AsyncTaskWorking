@@ -1,5 +1,6 @@
 package com.example.rpereira.asynctaskworking;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,9 +11,10 @@ public class TarefaDownload extends AsyncTask<String, Void, Bitmap> {
 
     private ProgressDialog mLoad;
 
+    @SuppressLint("StaticFieldLeak")
     private Context mContext;
 
-    public TarefaDownload(Context context) {
+    TarefaDownload(Context context) {
         this.mContext = context;
     }
 
