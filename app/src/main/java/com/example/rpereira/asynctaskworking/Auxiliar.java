@@ -7,9 +7,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
-public class Auxiliar {
+class Auxiliar {
 
-    public static Bitmap baixarImagem(String url) throws IOException {
+    static Bitmap baixarImagem(String url) throws IOException {
         URL endereco;
         InputStream inputStream;
         Bitmap imagem;
